@@ -9,66 +9,23 @@
 From admissions to report cards, attendance to the canteen till: SIDIGS connects
 foundations, schools, teachers, students and parents in one integrated ecosystem.
 
-[![Website](https://img.shields.io/badge/sidigs.com-0f766e?style=for-the-badge&logo=googlechrome&logoColor=white)](https://sidigs.com)
-[![Architecture](https://img.shields.io/badge/Architecture-2563eb?style=for-the-badge&logo=readthedocs&logoColor=white)](https://github.com/sidigs-microservice/sidigs-architecture)
-[![Service Template](https://img.shields.io/badge/Service_Template-7c3aed?style=for-the-badge&logo=nestjs&logoColor=white)](https://github.com/sidigs-microservice/sidigs-service-template)
+<a href="https://sidigs.com"><img src="./assets/btn-website.svg" alt="sidigs.com" height="44" /></a>
+<a href="https://github.com/sidigs-microservice/sidigs-architecture"><img src="./assets/btn-architecture.svg" alt="Architecture" height="44" /></a>
+<a href="https://github.com/sidigs-microservice/sidigs-service-template"><img src="./assets/btn-template.svg" alt="Service Template" height="44" /></a>
 
 </div>
-
----
 
 ## 🏫 What we build
 
 SIDIGS is a digital school platform used by **foundations, schools and families** across Indonesia.
-This organization holds its next generation: a set of independent, domain-focused services
-behind a single gateway, and one web app with a dedicated workspace for every role.
+This organization holds its next generation: independent, domain-focused services behind a single
+gateway, and one web app with a dedicated workspace for every role.
 
-<table>
-<tr>
-<td width="33%" valign="top">
-
-**🎓 Academic**<br/>
-Classes, timetables, attendance, curriculum, report cards, admissions (SPMB), internships (PKL), student affairs.
-
-</td>
-<td width="33%" valign="top">
-
-**📝 Assessment**<br/>
-Question banks with 8 question types, CBT with device lock and anti-cheat, scoring and analytics.
-
-</td>
-<td width="33%" valign="top">
-
-**💰 Finance**<br/>
-Bills, virtual accounts, e-money, savings, double-entry accounting, school credit ledger.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-**👥 People**<br/>
-Staff records, attendance with geo-tagging and selfies, shifts and bonuses, payroll, teacher performance.
-
-</td>
-<td valign="top">
-
-**🏢 School services**<br/>
-Library, clinic, laundry, boarding school, facilities and assets, canteen point of sale.
-
-</td>
-<td valign="top">
-
-**💬 Communication**<br/>
-Chat and groups, class discussions, notifications, announcements, digital magazines.
-
-</td>
-</tr>
-</table>
+<img src="./assets/features.svg" alt="What we build: academic, assessment, finance, people, school services, communication" width="100%" />
 
 ## 🧭 Architecture
 
-<img src="./assets/architecture.svg" alt="Architecture: Web App and devices reach the API Gateway, which routes to core, domain and edge services" width="100%" />
+<img src="./assets/architecture.svg" alt="Architecture: the Web App reaches the API Gateway, which routes to the core and domain services" width="100%" />
 
 **Principles we hold to**
 
@@ -80,47 +37,48 @@ Chat and groups, class discussions, notifications, announcements, digital magazi
 
 ## 🗂️ Repositories
 
-| Area | Repository | Purpose |
-|---|---|---|
-| 🌐 Front end | [`sidigs-web-app`](https://github.com/sidigs-microservice/sidigs-web-app) | Web app with a workspace per role: admin, teacher, student, parent, finance, foundation and more |
-| 🚪 Edge | [`sidigs-api-gateway`](https://github.com/sidigs-microservice/sidigs-api-gateway) | Routing, identity, tenancy, permissions, feature flags, rate limits |
-| 🔑 Core | [`sidigs-iam-service`](https://github.com/sidigs-microservice/sidigs-iam-service) | Accounts, authentication, permission groups, notifications, chat |
-| 🏛️ Core | [`sidigs-organization-service`](https://github.com/sidigs-microservice/sidigs-organization-service) | Foundations, schools, partners, branding, attendance policy |
-| 🎓 Domain | [`sidigs-academic-service`](https://github.com/sidigs-microservice/sidigs-academic-service) | Students, classes, curriculum, attendance, admissions, report cards |
-| 📝 Domain | [`sidigs-exam-service`](https://github.com/sidigs-microservice/sidigs-exam-service) | Question banks, CBT runtime, scoring |
-| 💰 Domain | [`sidigs-finance-service`](https://github.com/sidigs-microservice/sidigs-finance-service) | Billing, payments, e-money, savings, accounting |
-| 👥 Domain | [`sidigs-hr-service`](https://github.com/sidigs-microservice/sidigs-hr-service) | Staff, staff attendance, payroll, performance |
-| 📰 Domain | [`sidigs-content-service`](https://github.com/sidigs-microservice/sidigs-content-service) | Correspondence, announcements, documents, uploads |
-| 🏢 Domain | [`sidigs-infrastructure-service`](https://github.com/sidigs-microservice/sidigs-infrastructure-service) | Facilities, library, clinic, laundry, boarding school |
-| 🍱 Domain | [`sidigs-canteen-service`](https://github.com/sidigs-microservice/sidigs-canteen-service) | Merchants and canteen point of sale |
-| 🧾 Domain | [`sidigs-registration-service`](https://github.com/sidigs-microservice/sidigs-registration-service) | School registration and onboarding |
-| 🏭 Domain | [`sidigs-pkl-service`](https://github.com/sidigs-microservice/sidigs-pkl-service) | Internship (PKL) domain |
-| 📡 Edge | [`sidigs-attendance-ingress-service`](https://github.com/sidigs-microservice/sidigs-attendance-ingress-service) | RFID and device attendance intake |
-| 🧰 Platform | [`sidigs-platform`](https://github.com/sidigs-microservice/sidigs-platform) | Local runtime, config, seeds and developer tooling |
-| 🧱 Platform | [`sidigs-service-template`](https://github.com/sidigs-microservice/sidigs-service-template) | Starting point for every new service |
-| 📐 Docs | [`sidigs-architecture`](https://github.com/sidigs-microservice/sidigs-architecture) | Architecture decisions and the source of truth |
-| 🧪 Docs | [`sidigs-api-collection`](https://github.com/sidigs-microservice/sidigs-api-collection) | API collections for testing and integration |
+<table>
+<tr><th colspan="2" align="left">🌐 Front end &amp; gateway</th></tr>
+<tr>
+<td width="50%" valign="top"><a href="https://github.com/sidigs-microservice/sidigs-web-app"><b>sidigs-web-app</b></a><br/><sub>Web app with a workspace for every role</sub></td>
+<td width="50%" valign="top"><a href="https://github.com/sidigs-microservice/sidigs-api-gateway"><b>sidigs-api-gateway</b></a><br/><sub>Routing, identity, tenancy, permissions, feature flags</sub></td>
+</tr>
+<tr><th colspan="2" align="left">🔑 Core services</th></tr>
+<tr>
+<td width="50%" valign="top"><a href="https://github.com/sidigs-microservice/sidigs-iam-service"><b>sidigs-iam-service</b></a><br/><sub>Accounts, authentication, notifications, chat</sub></td>
+<td width="50%" valign="top"><a href="https://github.com/sidigs-microservice/sidigs-organization-service"><b>sidigs-organization-service</b></a><br/><sub>Foundations, schools, partners, branding</sub></td>
+</tr>
+<tr><th colspan="2" align="left">🧩 Domain services</th></tr>
+<tr>
+<td width="50%" valign="top"><a href="https://github.com/sidigs-microservice/sidigs-academic-service"><b>sidigs-academic-service</b></a><br/><sub>Students, classes, curriculum, attendance, report cards</sub></td>
+<td width="50%" valign="top"><a href="https://github.com/sidigs-microservice/sidigs-exam-service"><b>sidigs-exam-service</b></a><br/><sub>Question banks, CBT runtime, scoring</sub></td>
+</tr>
+<tr>
+<td width="50%" valign="top"><a href="https://github.com/sidigs-microservice/sidigs-finance-service"><b>sidigs-finance-service</b></a><br/><sub>Billing, payments, e-money, savings, accounting</sub></td>
+<td width="50%" valign="top"><a href="https://github.com/sidigs-microservice/sidigs-hr-service"><b>sidigs-hr-service</b></a><br/><sub>Staff, staff attendance, payroll, performance</sub></td>
+</tr>
+<tr>
+<td width="50%" valign="top"><a href="https://github.com/sidigs-microservice/sidigs-content-service"><b>sidigs-content-service</b></a><br/><sub>Correspondence, announcements, documents, uploads</sub></td>
+<td width="50%" valign="top"><a href="https://github.com/sidigs-microservice/sidigs-infrastructure-service"><b>sidigs-infrastructure-service</b></a><br/><sub>Facilities, library, clinic, laundry, boarding school</sub></td>
+</tr>
+<tr>
+<td width="50%" valign="top"><a href="https://github.com/sidigs-microservice/sidigs-canteen-service"><b>sidigs-canteen-service</b></a><br/><sub>Merchants and canteen point of sale</sub></td>
+<td width="50%" valign="top"><a href="https://github.com/sidigs-microservice/sidigs-registration-service"><b>sidigs-registration-service</b></a><br/><sub>School registration and onboarding</sub></td>
+</tr>
+<tr><th colspan="2" align="left">🧰 Platform &amp; docs</th></tr>
+<tr>
+<td width="50%" valign="top"><a href="https://github.com/sidigs-microservice/sidigs-platform"><b>sidigs-platform</b></a><br/><sub>Local runtime, config, seeds, developer tooling</sub></td>
+<td width="50%" valign="top"><a href="https://github.com/sidigs-microservice/sidigs-service-template"><b>sidigs-service-template</b></a><br/><sub>Starting point for every new service</sub></td>
+</tr>
+<tr>
+<td width="50%" valign="top"><a href="https://github.com/sidigs-microservice/sidigs-architecture"><b>sidigs-architecture</b></a><br/><sub>Architecture decisions, the source of truth</sub></td>
+<td width="50%" valign="top"><a href="https://github.com/sidigs-microservice/sidigs-api-collection"><b>sidigs-api-collection</b></a><br/><sub>API collections for testing and integration</sub></td>
+</tr>
+</table>
 
 ## 🛠️ Tech stack
 
-<div align="center">
-
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
-![Node.js](https://img.shields.io/badge/Node.js-5FA04E?style=flat-square&logo=nodedotjs&logoColor=white)
-![NestJS](https://img.shields.io/badge/NestJS-E0234E?style=flat-square&logo=nestjs&logoColor=white)
-![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white)
-![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)
-![Prisma](https://img.shields.io/badge/Prisma-2D3748?style=flat-square&logo=prisma&logoColor=white)
-![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
-![Redis](https://img.shields.io/badge/Redis-FF4438?style=flat-square&logo=redis&logoColor=white)
-![BullMQ](https://img.shields.io/badge/BullMQ-DC382D?style=flat-square&logo=redis&logoColor=white)
-![Better Auth](https://img.shields.io/badge/Better_Auth-111111?style=flat-square&logo=auth0&logoColor=white)
-![Jest](https://img.shields.io/badge/Jest-C21325?style=flat-square&logo=jest&logoColor=white)
-![Vitest](https://img.shields.io/badge/Vitest-6E9F18?style=flat-square&logo=vitest&logoColor=white)
-![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
-
-</div>
+<img src="./assets/tech.svg" alt="Tech stack. Backend: TypeScript, Node.js, NestJS, Better Auth. Frontend: Next.js 16, React, Tailwind CSS v4, Lucide. Data: MySQL 8.4, Prisma, Redis, BullMQ. Quality and CI: Jest, Vitest, ESLint, GitHub Actions." width="100%" />
 
 ## 🔄 How we work
 

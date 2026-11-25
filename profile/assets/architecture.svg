@@ -1,9 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 540" width="1280" height="540" role="img" aria-label="Architecture: Web App and devices reach the API Gateway, which routes to core, domain and edge services">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 440" width="1280" height="440" role="img" aria-label="Architecture: the Web App reaches the API Gateway, which routes to the core and domain services">
   <defs>
     <pattern id="dots" width="22" height="22" patternUnits="userSpaceOnUse">
       <circle cx="2" cy="2" r="1.2" fill="#1e2b45"/>
     </pattern>
-    <clipPath id="card"><rect width="1280" height="540" rx="18"/></clipPath>
+    <clipPath id="card"><rect width="1280" height="440" rx="18"/></clipPath>
     <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
       <path d="M0 0 L10 5 L0 10 z" fill="#2dd4bf"/>
     </marker>
@@ -20,35 +20,25 @@
   </style>
 
   <g clip-path="url(#card)" class="sans">
-    <rect width="1280" height="540" fill="#0a1222"/>
-    <rect width="1280" height="540" fill="url(#dots)"/>
+    <rect width="1280" height="440" fill="#0a1222"/>
+    <rect width="1280" height="440" fill="url(#dots)"/>
 
-    <!-- wires -->
-    <path class="wire" d="M260 270 L346 270" marker-end="url(#arrow)"/>
-    <path class="wire" d="M490 270 L556 270" marker-end="url(#arrow)"/>
-    <path class="wire" d="M260 465 L586 444" marker-end="url(#arrow)"/>
-    <circle class="pulse" r="4"><animateMotion dur="1.8s" repeatCount="indefinite" path="M260 270 L346 270"/></circle>
-    <circle class="pulse" r="4"><animateMotion dur="1.6s" repeatCount="indefinite" path="M490 270 L556 270"/></circle>
-    <circle class="pulse" r="4"><animateMotion dur="2.6s" repeatCount="indefinite" path="M260 465 L586 444"/></circle>
+    <path class="wire" d="M260 220 L346 220" marker-end="url(#arrow)"/>
+    <path class="wire" d="M490 220 L556 220" marker-end="url(#arrow)"/>
+    <circle class="pulse" r="4"><animateMotion dur="1.8s" repeatCount="indefinite" path="M260 220 L346 220"/></circle>
+    <circle class="pulse" r="4"><animateMotion dur="1.6s" repeatCount="indefinite" path="M490 220 L556 220"/></circle>
 
-    <!-- left: clients -->
-    <rect class="box" x="60" y="230" width="200" height="80" rx="12"/>
-    <text class="name" x="160" y="265" text-anchor="middle">Web App</text>
-    <text class="sub mono" x="160" y="288" text-anchor="middle">Next.js · every role</text>
+    <rect class="box" x="60" y="180" width="200" height="80" rx="12"/>
+    <text class="name" x="160" y="215" text-anchor="middle">Web App</text>
+    <text class="sub mono" x="160" y="238" text-anchor="middle">Next.js · every role</text>
 
-    <rect class="box" x="60" y="430" width="200" height="70" rx="12"/>
-    <text class="name" x="160" y="461" text-anchor="middle">RFID &amp; Devices</text>
-    <text class="sub mono" x="160" y="482" text-anchor="middle">card taps</text>
+    <circle cx="420" cy="220" r="82" fill="none" stroke="#2dd4bf" stroke-opacity=".18" stroke-width="1.5"/>
+    <circle cx="420" cy="220" r="68" fill="#0a1222" stroke="#2dd4bf" stroke-width="2"/>
+    <text x="420" y="212" text-anchor="middle" font-size="16" font-weight="800" fill="#2dd4bf">API</text>
+    <text x="420" y="232" text-anchor="middle" font-size="16" font-weight="800" fill="#2dd4bf">GATEWAY</text>
+    <text class="sub mono" x="420" y="322" text-anchor="middle">auth · tenant · flags</text>
 
-    <!-- gateway -->
-    <circle cx="420" cy="270" r="82" fill="none" stroke="#2dd4bf" stroke-opacity=".18" stroke-width="1.5"/>
-    <circle cx="420" cy="270" r="68" fill="#0a1222" stroke="#2dd4bf" stroke-width="2"/>
-    <text x="420" y="262" text-anchor="middle" font-size="16" font-weight="800" fill="#2dd4bf">API</text>
-    <text x="420" y="282" text-anchor="middle" font-size="16" font-weight="800" fill="#2dd4bf">GATEWAY</text>
-    <text class="sub mono" x="420" y="372" text-anchor="middle">auth · tenant · flags</text>
-
-    <!-- right: services -->
-    <rect x="560" y="36" width="680" height="472" rx="16" fill="#0d1729" stroke="#1e2b45" stroke-width="1.5" stroke-dasharray="6 6"/>
+    <rect x="560" y="36" width="680" height="368" rx="16" fill="#0d1729" stroke="#1e2b45" stroke-width="1.5" stroke-dasharray="6 6"/>
 
     <text class="group mono" x="590" y="70">CORE</text>
     <rect class="box" x="590" y="82" width="196" height="58" rx="10"/>
@@ -75,17 +65,10 @@
     <text class="name" x="608" y="345">Canteen</text><text class="sub mono" x="608" y="365">point of sale</text>
     <rect class="box" x="802" y="320" width="196" height="58" rx="10"/>
     <text class="name" x="820" y="345">Registration</text><text class="sub mono" x="820" y="365">onboarding</text>
-    <rect class="box" x="1014" y="320" width="196" height="58" rx="10"/>
-    <text class="name" x="1032" y="345">PKL</text><text class="sub mono" x="1032" y="365">internships</text>
-
-    <text class="group mono" x="590" y="410">EDGE</text>
-    <rect class="box" x="590" y="422" width="408" height="58" rx="10"/>
-    <text class="name" x="608" y="447">Attendance Ingress</text><text class="sub mono" x="608" y="467">taps → Academic · HR</text>
-
     <g class="mono" font-size="12" fill="#64748b">
-      <rect x="1014" y="422" width="196" height="58" rx="10" fill="none" stroke="#2a3a5c" stroke-dasharray="4 4"/>
-      <text x="1112" y="447" text-anchor="middle">1 service</text>
-      <text x="1112" y="467" text-anchor="middle">= 1 database</text>
+      <rect x="1014" y="320" width="196" height="58" rx="10" fill="none" stroke="#2a3a5c" stroke-dasharray="4 4"/>
+      <text x="1112" y="345" text-anchor="middle">1 service</text>
+      <text x="1112" y="365" text-anchor="middle">= 1 database</text>
     </g>
   </g>
 </svg>

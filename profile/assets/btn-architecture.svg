@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 52" width="240" height="52" role="img" aria-label="Architecture">
+  <rect x="1" y="1" width="238" height="50" rx="12" fill="#0a1222" stroke="#2dd4bf" stroke-opacity=".6" stroke-width="1.5"/>
+  <circle cx="26" cy="26" r="4" fill="#2dd4bf"/>
+  <text x="42" y="32" font-family="'Segoe UI', 'Inter', Helvetica, Arial, sans-serif" font-size="17" font-weight="700" fill="#f1f5f9">Architecture</text>
+  <text x="214" y="32" text-anchor="end" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="18" fill="#2dd4bf">→</text>
+</svg>

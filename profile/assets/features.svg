@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 440" width="1280" height="440" role="img" aria-label="What we build: academic, assessment, finance, people, school services, communication">
+  <defs>
+    <pattern id="dots" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.2" fill="#1e2b45"/></pattern>
+    <clipPath id="card"><rect width="1280" height="440" rx="18"/></clipPath>
+  </defs>
+  <g clip-path="url(#card)" font-family="'Segoe UI', 'Inter', Helvetica, Arial, sans-serif">
+    <rect width="1280" height="440" fill="#0a1222"/>
+    <rect width="1280" height="440" fill="url(#dots)"/>
+
+    <rect x="40" y="40" width="386" height="170" rx="14" fill="#111c31" stroke="#2a3a5c" stroke-width="1.5"/>
+    <rect x="40" y="64" width="4" height="34" rx="2" fill="#2dd4bf"/>
+    <text x="66" y="80" font-family="'Cascadia Code', 'JetBrains Mono', Consolas, monospace" font-size="13" fill="#2dd4bf" letter-spacing="2">01</text>
+    <text x="66" y="104" font-size="22" font-weight="700" fill="#f1f5f9">Academic</text>
+    <text x="66" y="140" font-size="15" fill="#94a3b8">Classes, timetables, attendance,</text>
+    <text x="66" y="162" font-size="15" fill="#94a3b8">curriculum, report cards, admissions,</text>
+    <text x="66" y="184" font-size="15" fill="#94a3b8">internships and student affairs.</text>
+    <rect x="446" y="40" width="386" height="170" rx="14" fill="#111c31" stroke="#2a3a5c" stroke-width="1.5"/>
+    <rect x="446" y="64" width="4" height="34" rx="2" fill="#2dd4bf"/>
+    <text x="472" y="80" font-family="'Cascadia Code', 'JetBrains Mono', Consolas, monospace" font-size="13" fill="#2dd4bf" letter-spacing="2">02</text>
+    <text x="472" y="104" font-size="22" font-weight="700" fill="#f1f5f9">Assessment</text>
+    <text x="472" y="140" font-size="15" fill="#94a3b8">Question banks with 8 question types,</text>
+    <text x="472" y="162" font-size="15" fill="#94a3b8">CBT with device lock and anti-cheat,</text>
+    <text x="472" y="184" font-size="15" fill="#94a3b8">scoring and analytics.</text>
+    <rect x="852" y="40" width="386" height="170" rx="14" fill="#111c31" stroke="#2a3a5c" stroke-width="1.5"/>
+    <rect x="852" y="64" width="4" height="34" rx="2" fill="#2dd4bf"/>
+    <text x="878" y="80" font-family="'Cascadia Code', 'JetBrains Mono', Consolas, monospace" font-size="13" fill="#2dd4bf" letter-spacing="2">03</text>
+    <text x="878" y="104" font-size="22" font-weight="700" fill="#f1f5f9">Finance</text>
+    <text x="878" y="140" font-size="15" fill="#94a3b8">Bills, virtual accounts, e-money,</text>
+    <text x="878" y="162" font-size="15" fill="#94a3b8">savings and double-entry accounting.</text>
+    <rect x="40" y="230" width="386" height="170" rx="14" fill="#111c31" stroke="#2a3a5c" stroke-width="1.5"/>
+    <rect x="40" y="254" width="4" height="34" rx="2" fill="#2dd4bf"/>
+    <text x="66" y="270" font-family="'Cascadia Code', 'JetBrains Mono', Consolas, monospace" font-size="13" fill="#2dd4bf" letter-spacing="2">04</text>
+    <text x="66" y="294" font-size="22" font-weight="700" fill="#f1f5f9">People</text>
+    <text x="66" y="330" font-size="15" fill="#94a3b8">Staff records, geo-tagged selfie</text>
+    <text x="66" y="352" font-size="15" fill="#94a3b8">attendance, shifts and bonuses,</text>
+    <text x="66" y="374" font-size="15" fill="#94a3b8">payroll and teacher performance.</text>
+    <rect x="446" y="230" width="386" height="170" rx="14" fill="#111c31" stroke="#2a3a5c" stroke-width="1.5"/>
+    <rect x="446" y="254" width="4" height="34" rx="2" fill="#2dd4bf"/>
+    <text x="472" y="270" font-family="'Cascadia Code', 'JetBrains Mono', Consolas, monospace" font-size="13" fill="#2dd4bf" letter-spacing="2">05</text>
+    <text x="472" y="294" font-size="22" font-weight="700" fill="#f1f5f9">School services</text>
+    <text x="472" y="330" font-size="15" fill="#94a3b8">Library, clinic, laundry, boarding,</text>
+    <text x="472" y="352" font-size="15" fill="#94a3b8">facilities and assets, canteen</text>
+    <text x="472" y="374" font-size="15" fill="#94a3b8">point of sale.</text>
+    <rect x="852" y="230" width="386" height="170" rx="14" fill="#111c31" stroke="#2a3a5c" stroke-width="1.5"/>
+    <rect x="852" y="254" width="4" height="34" rx="2" fill="#2dd4bf"/>
+    <text x="878" y="270" font-family="'Cascadia Code', 'JetBrains Mono', Consolas, monospace" font-size="13" fill="#2dd4bf" letter-spacing="2">06</text>
+    <text x="878" y="294" font-size="22" font-weight="700" fill="#f1f5f9">Communication</text>
+    <text x="878" y="330" font-size="15" fill="#94a3b8">Chat and groups, class discussions,</text>
+    <text x="878" y="352" font-size="15" fill="#94a3b8">notifications, announcements,</text>
+    <text x="878" y="374" font-size="15" fill="#94a3b8">digital magazines.</text>
+  </g>
+</svg>

@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 440" width="1280" height="440" role="img" aria-label="Yang kami bangun: akademik, penilaian, keuangan, kepegawaian, layanan sekolah, komunikasi">
+  <defs>
+    <pattern id="dots" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.2" fill="#1e2b45"/></pattern>
+    <clipPath id="card"><rect width="1280" height="440" rx="18"/></clipPath>
+  </defs>
+  <g clip-path="url(#card)" font-family="'Segoe UI', 'Inter', Helvetica, Arial, sans-serif">
+    <rect width="1280" height="440" fill="#0a1222"/>
+    <rect width="1280" height="440" fill="url(#dots)"/>
+
+    <rect x="40" y="40" width="386" height="170" rx="14" fill="#111c31" stroke="#2a3a5c" stroke-width="1.5"/>
+    <rect x="40" y="64" width="4" height="34" rx="2" fill="#2dd4bf"/>
+    <text x="66" y="80" font-family="'Cascadia Code', 'JetBrains Mono', Consolas, monospace" font-size="13" fill="#2dd4bf" letter-spacing="2">01</text>
+    <text x="66" y="104" font-size="22" font-weight="700" fill="#f1f5f9">Akademik</text>
+    <text x="66" y="140" font-size="15" fill="#94a3b8">Kelas, jadwal, presensi, kurikulum,</text>
+    <text x="66" y="162" font-size="15" fill="#94a3b8">rapor, SPMB, PKL, dan kesiswaan.</text>
+    <rect x="446" y="40" width="386" height="170" rx="14" fill="#111c31" stroke="#2a3a5c" stroke-width="1.5"/>
+    <rect x="446" y="64" width="4" height="34" rx="2" fill="#2dd4bf"/>
+    <text x="472" y="80" font-family="'Cascadia Code', 'JetBrains Mono', Consolas, monospace" font-size="13" fill="#2dd4bf" letter-spacing="2">02</text>
+    <text x="472" y="104" font-size="22" font-weight="700" fill="#f1f5f9">Penilaian</text>
+    <text x="472" y="140" font-size="15" fill="#94a3b8">Bank soal dengan 8 tipe soal,</text>
+    <text x="472" y="162" font-size="15" fill="#94a3b8">CBT dengan kunci perangkat dan</text>
+    <text x="472" y="184" font-size="15" fill="#94a3b8">anti-curang, penilaian, analisis.</text>
+    <rect x="852" y="40" width="386" height="170" rx="14" fill="#111c31" stroke="#2a3a5c" stroke-width="1.5"/>
+    <rect x="852" y="64" width="4" height="34" rx="2" fill="#2dd4bf"/>
+    <text x="878" y="80" font-family="'Cascadia Code', 'JetBrains Mono', Consolas, monospace" font-size="13" fill="#2dd4bf" letter-spacing="2">03</text>
+    <text x="878" y="104" font-size="22" font-weight="700" fill="#f1f5f9">Keuangan</text>
+    <text x="878" y="140" font-size="15" fill="#94a3b8">Tagihan, virtual account, e-money,</text>
+    <text x="878" y="162" font-size="15" fill="#94a3b8">tabungan, dan akuntansi berpasangan.</text>
+    <rect x="40" y="230" width="386" height="170" rx="14" fill="#111c31" stroke="#2a3a5c" stroke-width="1.5"/>
+    <rect x="40" y="254" width="4" height="34" rx="2" fill="#2dd4bf"/>
+    <text x="66" y="270" font-family="'Cascadia Code', 'JetBrains Mono', Consolas, monospace" font-size="13" fill="#2dd4bf" letter-spacing="2">04</text>
+    <text x="66" y="294" font-size="22" font-weight="700" fill="#f1f5f9">Kepegawaian</text>
+    <text x="66" y="330" font-size="15" fill="#94a3b8">Data pegawai, presensi swafoto</text>
+    <text x="66" y="352" font-size="15" fill="#94a3b8">dengan geotag, shift dan bonus,</text>
+    <text x="66" y="374" font-size="15" fill="#94a3b8">penggajian, kinerja guru.</text>
+    <rect x="446" y="230" width="386" height="170" rx="14" fill="#111c31" stroke="#2a3a5c" stroke-width="1.5"/>
+    <rect x="446" y="254" width="4" height="34" rx="2" fill="#2dd4bf"/>
+    <text x="472" y="270" font-family="'Cascadia Code', 'JetBrains Mono', Consolas, monospace" font-size="13" fill="#2dd4bf" letter-spacing="2">05</text>
+    <text x="472" y="294" font-size="22" font-weight="700" fill="#f1f5f9">Layanan Sekolah</text>
+    <text x="472" y="330" font-size="15" fill="#94a3b8">Perpustakaan, klinik, laundry,</text>
+    <text x="472" y="352" font-size="15" fill="#94a3b8">pesantren, sarpra dan aset,</text>
+    <text x="472" y="374" font-size="15" fill="#94a3b8">kasir kantin.</text>
+    <rect x="852" y="230" width="386" height="170" rx="14" fill="#111c31" stroke="#2a3a5c" stroke-width="1.5"/>
+    <rect x="852" y="254" width="4" height="34" rx="2" fill="#2dd4bf"/>
+    <text x="878" y="270" font-family="'Cascadia Code', 'JetBrains Mono', Consolas, monospace" font-size="13" fill="#2dd4bf" letter-spacing="2">06</text>
+    <text x="878" y="294" font-size="22" font-weight="700" fill="#f1f5f9">Komunikasi</text>
+    <text x="878" y="330" font-size="15" fill="#94a3b8">Chat dan grup, diskusi kelas,</text>
+    <text x="878" y="352" font-size="15" fill="#94a3b8">notifikasi, pengumuman,</text>
+    <text x="878" y="374" font-size="15" fill="#94a3b8">majalah digital.</text>
+  </g>
+</svg>

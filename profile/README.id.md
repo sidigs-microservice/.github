@@ -9,66 +9,23 @@
 Dari pendaftaran hingga rapor, presensi hingga kasir kantin: SIDIGS menghubungkan
 yayasan, sekolah, guru, siswa, dan orang tua dalam satu ekosistem terpadu.
 
-[![Website](https://img.shields.io/badge/sidigs.com-0f766e?style=for-the-badge&logo=googlechrome&logoColor=white)](https://sidigs.com)
-[![Arsitektur](https://img.shields.io/badge/Arsitektur-2563eb?style=for-the-badge&logo=readthedocs&logoColor=white)](https://github.com/sidigs-microservice/sidigs-architecture)
-[![Template Layanan](https://img.shields.io/badge/Template_Layanan-7c3aed?style=for-the-badge&logo=nestjs&logoColor=white)](https://github.com/sidigs-microservice/sidigs-service-template)
+<a href="https://sidigs.com"><img src="./assets/btn-website.svg" alt="sidigs.com" height="44" /></a>
+<a href="https://github.com/sidigs-microservice/sidigs-architecture"><img src="./assets/btn-architecture.svg" alt="Architecture" height="44" /></a>
+<a href="https://github.com/sidigs-microservice/sidigs-service-template"><img src="./assets/btn-template.svg" alt="Service Template" height="44" /></a>
 
 </div>
-
----
 
 ## 🏫 Apa yang kami bangun
 
 SIDIGS adalah platform sekolah digital yang dipakai **yayasan, sekolah, dan keluarga** di seluruh Indonesia.
-Organisasi ini menampung generasi berikutnya: kumpulan layanan mandiri per domain di balik
-satu gateway, dan satu aplikasi web dengan ruang kerja khusus untuk setiap peran.
+Organisasi ini menampung generasi berikutnya: layanan mandiri per domain di balik satu gateway,
+dan satu aplikasi web dengan ruang kerja khusus untuk setiap peran.
 
-<table>
-<tr>
-<td width="33%" valign="top">
-
-**🎓 Akademik**<br/>
-Kelas, jadwal, presensi, kurikulum, rapor, SPMB, PKL, kesiswaan.
-
-</td>
-<td width="33%" valign="top">
-
-**📝 Penilaian**<br/>
-Bank soal dengan 8 tipe soal, CBT dengan kunci perangkat dan anti-curang, penilaian dan analisis.
-
-</td>
-<td width="33%" valign="top">
-
-**💰 Keuangan**<br/>
-Tagihan, virtual account, e-money, tabungan, akuntansi berpasangan, buku besar kredit sekolah.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-**👥 Kepegawaian**<br/>
-Data pegawai, presensi dengan geo-tagging dan swafoto, shift dan bonus, penggajian, kinerja guru.
-
-</td>
-<td valign="top">
-
-**🏢 Layanan sekolah**<br/>
-Perpustakaan, klinik, laundry, pesantren, sarana prasarana dan aset, kasir kantin.
-
-</td>
-<td valign="top">
-
-**💬 Komunikasi**<br/>
-Chat dan grup, diskusi kelas, notifikasi, pengumuman, majalah digital.
-
-</td>
-</tr>
-</table>
+<img src="./assets/features.id.svg" alt="Yang kami bangun: akademik, penilaian, keuangan, kepegawaian, layanan sekolah, komunikasi" width="100%" />
 
 ## 🧭 Arsitektur
 
-<img src="./assets/architecture.svg" alt="Arsitektur: Web App dan perangkat masuk lewat API Gateway, yang meneruskan ke layanan inti, domain, dan edge" width="100%" />
+<img src="./assets/architecture.svg" alt="Arsitektur: Web App masuk lewat API Gateway, yang meneruskan ke layanan inti dan domain" width="100%" />
 
 **Prinsip yang kami pegang**
 
@@ -80,47 +37,48 @@ Chat dan grup, diskusi kelas, notifikasi, pengumuman, majalah digital.
 
 ## 🗂️ Repositori
 
-| Area | Repositori | Fungsi |
-|---|---|---|
-| 🌐 Front end | [`sidigs-web-app`](https://github.com/sidigs-microservice/sidigs-web-app) | Aplikasi web dengan ruang kerja per peran: administrasi, guru, siswa, orang tua, keuangan, yayasan, dan lainnya |
-| 🚪 Edge | [`sidigs-api-gateway`](https://github.com/sidigs-microservice/sidigs-api-gateway) | Routing, identitas, tenant, izin akses, feature flag, rate limit |
-| 🔑 Inti | [`sidigs-iam-service`](https://github.com/sidigs-microservice/sidigs-iam-service) | Akun, autentikasi, grup izin, notifikasi, chat |
-| 🏛️ Inti | [`sidigs-organization-service`](https://github.com/sidigs-microservice/sidigs-organization-service) | Yayasan, sekolah, partner, branding, kebijakan presensi |
-| 🎓 Domain | [`sidigs-academic-service`](https://github.com/sidigs-microservice/sidigs-academic-service) | Siswa, kelas, kurikulum, presensi, SPMB, rapor |
-| 📝 Domain | [`sidigs-exam-service`](https://github.com/sidigs-microservice/sidigs-exam-service) | Bank soal, runtime CBT, penilaian |
-| 💰 Domain | [`sidigs-finance-service`](https://github.com/sidigs-microservice/sidigs-finance-service) | Tagihan, pembayaran, e-money, tabungan, akuntansi |
-| 👥 Domain | [`sidigs-hr-service`](https://github.com/sidigs-microservice/sidigs-hr-service) | Pegawai, presensi staf, penggajian, kinerja |
-| 📰 Domain | [`sidigs-content-service`](https://github.com/sidigs-microservice/sidigs-content-service) | Persuratan, pengumuman, dokumen, unggahan |
-| 🏢 Domain | [`sidigs-infrastructure-service`](https://github.com/sidigs-microservice/sidigs-infrastructure-service) | Sarpra, perpustakaan, klinik, laundry, pesantren |
-| 🍱 Domain | [`sidigs-canteen-service`](https://github.com/sidigs-microservice/sidigs-canteen-service) | Merchant dan kasir kantin |
-| 🧾 Domain | [`sidigs-registration-service`](https://github.com/sidigs-microservice/sidigs-registration-service) | Pendaftaran dan onboarding sekolah |
-| 🏭 Domain | [`sidigs-pkl-service`](https://github.com/sidigs-microservice/sidigs-pkl-service) | Domain Praktik Kerja Lapangan (PKL) |
-| 📡 Edge | [`sidigs-attendance-ingress-service`](https://github.com/sidigs-microservice/sidigs-attendance-ingress-service) | Penerimaan presensi dari RFID dan perangkat |
-| 🧰 Platform | [`sidigs-platform`](https://github.com/sidigs-microservice/sidigs-platform) | Runtime lokal, konfigurasi, seed, dan alat developer |
-| 🧱 Platform | [`sidigs-service-template`](https://github.com/sidigs-microservice/sidigs-service-template) | Titik awal setiap layanan baru |
-| 📐 Dokumen | [`sidigs-architecture`](https://github.com/sidigs-microservice/sidigs-architecture) | Keputusan arsitektur dan sumber kebenaran |
-| 🧪 Dokumen | [`sidigs-api-collection`](https://github.com/sidigs-microservice/sidigs-api-collection) | Koleksi API untuk pengujian dan integrasi |
+<table>
+<tr><th colspan="2" align="left">🌐 Front end &amp; gateway</th></tr>
+<tr>
+<td width="50%" valign="top"><a href="https://github.com/sidigs-microservice/sidigs-web-app"><b>sidigs-web-app</b></a><br/><sub>Aplikasi web dengan ruang kerja untuk setiap peran</sub></td>
+<td width="50%" valign="top"><a href="https://github.com/sidigs-microservice/sidigs-api-gateway"><b>sidigs-api-gateway</b></a><br/><sub>Routing, identitas, tenant, izin akses, feature flag</sub></td>
+</tr>
+<tr><th colspan="2" align="left">🔑 Layanan inti</th></tr>
+<tr>
+<td width="50%" valign="top"><a href="https://github.com/sidigs-microservice/sidigs-iam-service"><b>sidigs-iam-service</b></a><br/><sub>Akun, autentikasi, notifikasi, chat</sub></td>
+<td width="50%" valign="top"><a href="https://github.com/sidigs-microservice/sidigs-organization-service"><b>sidigs-organization-service</b></a><br/><sub>Yayasan, sekolah, partner, branding</sub></td>
+</tr>
+<tr><th colspan="2" align="left">🧩 Layanan domain</th></tr>
+<tr>
+<td width="50%" valign="top"><a href="https://github.com/sidigs-microservice/sidigs-academic-service"><b>sidigs-academic-service</b></a><br/><sub>Siswa, kelas, kurikulum, presensi, rapor</sub></td>
+<td width="50%" valign="top"><a href="https://github.com/sidigs-microservice/sidigs-exam-service"><b>sidigs-exam-service</b></a><br/><sub>Bank soal, runtime CBT, penilaian</sub></td>
+</tr>
+<tr>
+<td width="50%" valign="top"><a href="https://github.com/sidigs-microservice/sidigs-finance-service"><b>sidigs-finance-service</b></a><br/><sub>Tagihan, pembayaran, e-money, tabungan, akuntansi</sub></td>
+<td width="50%" valign="top"><a href="https://github.com/sidigs-microservice/sidigs-hr-service"><b>sidigs-hr-service</b></a><br/><sub>Pegawai, presensi staf, penggajian, kinerja</sub></td>
+</tr>
+<tr>
+<td width="50%" valign="top"><a href="https://github.com/sidigs-microservice/sidigs-content-service"><b>sidigs-content-service</b></a><br/><sub>Persuratan, pengumuman, dokumen, unggahan</sub></td>
+<td width="50%" valign="top"><a href="https://github.com/sidigs-microservice/sidigs-infrastructure-service"><b>sidigs-infrastructure-service</b></a><br/><sub>Sarpra, perpustakaan, klinik, laundry, pesantren</sub></td>
+</tr>
+<tr>
+<td width="50%" valign="top"><a href="https://github.com/sidigs-microservice/sidigs-canteen-service"><b>sidigs-canteen-service</b></a><br/><sub>Merchant dan kasir kantin</sub></td>
+<td width="50%" valign="top"><a href="https://github.com/sidigs-microservice/sidigs-registration-service"><b>sidigs-registration-service</b></a><br/><sub>Pendaftaran dan onboarding sekolah</sub></td>
+</tr>
+<tr><th colspan="2" align="left">🧰 Platform &amp; dokumen</th></tr>
+<tr>
+<td width="50%" valign="top"><a href="https://github.com/sidigs-microservice/sidigs-platform"><b>sidigs-platform</b></a><br/><sub>Runtime lokal, konfigurasi, seed, alat developer</sub></td>
+<td width="50%" valign="top"><a href="https://github.com/sidigs-microservice/sidigs-service-template"><b>sidigs-service-template</b></a><br/><sub>Titik awal setiap layanan baru</sub></td>
+</tr>
+<tr>
+<td width="50%" valign="top"><a href="https://github.com/sidigs-microservice/sidigs-architecture"><b>sidigs-architecture</b></a><br/><sub>Keputusan arsitektur, sumber kebenaran</sub></td>
+<td width="50%" valign="top"><a href="https://github.com/sidigs-microservice/sidigs-api-collection"><b>sidigs-api-collection</b></a><br/><sub>Koleksi API untuk pengujian dan integrasi</sub></td>
+</tr>
+</table>
 
 ## 🛠️ Teknologi
 
-<div align="center">
-
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
-![Node.js](https://img.shields.io/badge/Node.js-5FA04E?style=flat-square&logo=nodedotjs&logoColor=white)
-![NestJS](https://img.shields.io/badge/NestJS-E0234E?style=flat-square&logo=nestjs&logoColor=white)
-![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white)
-![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)
-![Prisma](https://img.shields.io/badge/Prisma-2D3748?style=flat-square&logo=prisma&logoColor=white)
-![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
-![Redis](https://img.shields.io/badge/Redis-FF4438?style=flat-square&logo=redis&logoColor=white)
-![BullMQ](https://img.shields.io/badge/BullMQ-DC382D?style=flat-square&logo=redis&logoColor=white)
-![Better Auth](https://img.shields.io/badge/Better_Auth-111111?style=flat-square&logo=auth0&logoColor=white)
-![Jest](https://img.shields.io/badge/Jest-C21325?style=flat-square&logo=jest&logoColor=white)
-![Vitest](https://img.shields.io/badge/Vitest-6E9F18?style=flat-square&logo=vitest&logoColor=white)
-![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
-
-</div>
+<img src="./assets/tech.svg" alt="Teknologi. Backend: TypeScript, Node.js, NestJS, Better Auth. Frontend: Next.js 16, React, Tailwind CSS v4, Lucide. Data: MySQL 8.4, Prisma, Redis, BullMQ. Kualitas dan CI: Jest, Vitest, ESLint, GitHub Actions." width="100%" />
 
 ## 🔄 Cara kami bekerja
 

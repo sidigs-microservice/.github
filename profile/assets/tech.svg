@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 260" width="1280" height="260" role="img" aria-label="Tech stack: backend, frontend, data, quality and CI">
+  <defs>
+    <pattern id="dots" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.2" fill="#1e2b45"/></pattern>
+    <clipPath id="card"><rect width="1280" height="260" rx="18"/></clipPath>
+  </defs>
+  <g clip-path="url(#card)" font-family="'Segoe UI', 'Inter', Helvetica, Arial, sans-serif">
+    <rect width="1280" height="260" fill="#0a1222"/>
+    <rect width="1280" height="260" fill="url(#dots)"/>
+
+    <rect x="40" y="30" width="285" height="200" rx="14" fill="#111c31" stroke="#2a3a5c" stroke-width="1.5"/>
+    <text x="64" y="62" font-family="'Cascadia Code', 'JetBrains Mono', Consolas, monospace" font-size="13" fill="#2dd4bf" letter-spacing="3">BACKEND</text>
+    <line x1="64" y1="76" x2="301" y2="76" stroke="#1e2b45" stroke-width="1.5"/>
+    <circle cx="70" cy="100" r="6" fill="#3178C6"/>
+    <text x="88" y="106" font-size="17" font-weight="600" fill="#e2e8f0">TypeScript</text>
+    <circle cx="70" cy="134" r="6" fill="#5FA04E"/>
+    <text x="88" y="140" font-size="17" font-weight="600" fill="#e2e8f0">Node.js</text>
+    <circle cx="70" cy="168" r="6" fill="#E0234E"/>
+    <text x="88" y="174" font-size="17" font-weight="600" fill="#e2e8f0">NestJS</text>
+    <circle cx="70" cy="202" r="6" fill="#e2e8f0"/>
+    <text x="88" y="208" font-size="17" font-weight="600" fill="#e2e8f0">Better Auth</text>
+    <rect x="345" y="30" width="285" height="200" rx="14" fill="#111c31" stroke="#2a3a5c" stroke-width="1.5"/>
+    <text x="369" y="62" font-family="'Cascadia Code', 'JetBrains Mono', Consolas, monospace" font-size="13" fill="#2dd4bf" letter-spacing="3">FRONTEND</text>
+    <line x1="369" y1="76" x2="606" y2="76" stroke="#1e2b45" stroke-width="1.5"/>
+    <circle cx="375" cy="100" r="6" fill="#ffffff"/>
+    <text x="393" y="106" font-size="17" font-weight="600" fill="#e2e8f0">Next.js</text>
+    <text x="606" y="106" text-anchor="end" font-family="'Cascadia Code', 'JetBrains Mono', Consolas, monospace" font-size="12" fill="#64748b">16</text>
+    <circle cx="375" cy="134" r="6" fill="#61DAFB"/>
+    <text x="393" y="140" font-size="17" font-weight="600" fill="#e2e8f0">React</text>
+    <circle cx="375" cy="168" r="6" fill="#06B6D4"/>
+    <text x="393" y="174" font-size="17" font-weight="600" fill="#e2e8f0">Tailwind CSS</text>
+    <text x="606" y="174" text-anchor="end" font-family="'Cascadia Code', 'JetBrains Mono', Consolas, monospace" font-size="12" fill="#64748b">v4</text>
+    <circle cx="375" cy="202" r="6" fill="#F56565"/>
+    <text x="393" y="208" font-size="17" font-weight="600" fill="#e2e8f0">Lucide</text>
+    <rect x="650" y="30" width="285" height="200" rx="14" fill="#111c31" stroke="#2a3a5c" stroke-width="1.5"/>
+    <text x="674" y="62" font-family="'Cascadia Code', 'JetBrains Mono', Consolas, monospace" font-size="13" fill="#2dd4bf" letter-spacing="3">DATA</text>
+    <line x1="674" y1="76" x2="911" y2="76" stroke="#1e2b45" stroke-width="1.5"/>
+    <circle cx="680" cy="100" r="6" fill="#4479A1"/>
+    <text x="698" y="106" font-size="17" font-weight="600" fill="#e2e8f0">MySQL</text>
+    <text x="911" y="106" text-anchor="end" font-family="'Cascadia Code', 'JetBrains Mono', Consolas, monospace" font-size="12" fill="#64748b">8.4</text>
+    <circle cx="680" cy="134" r="6" fill="#818cf8"/>
+    <text x="698" y="140" font-size="17" font-weight="600" fill="#e2e8f0">Prisma</text>
+    <circle cx="680" cy="168" r="6" fill="#FF4438"/>
+    <text x="698" y="174" font-size="17" font-weight="600" fill="#e2e8f0">Redis</text>
+    <circle cx="680" cy="202" r="6" fill="#DC382D"/>
+    <text x="698" y="208" font-size="17" font-weight="600" fill="#e2e8f0">BullMQ</text>
+    <rect x="955" y="30" width="285" height="200" rx="14" fill="#111c31" stroke="#2a3a5c" stroke-width="1.5"/>
+    <text x="979" y="62" font-family="'Cascadia Code', 'JetBrains Mono', Consolas, monospace" font-size="13" fill="#2dd4bf" letter-spacing="3">QUALITY &amp; CI</text>
+    <line x1="979" y1="76" x2="1216" y2="76" stroke="#1e2b45" stroke-width="1.5"/>
+    <circle cx="985" cy="100" r="6" fill="#C21325"/>
+    <text x="1003" y="106" font-size="17" font-weight="600" fill="#e2e8f0">Jest</text>
+    <circle cx="985" cy="134" r="6" fill="#6E9F18"/>
+    <text x="1003" y="140" font-size="17" font-weight="600" fill="#e2e8f0">Vitest</text>
+    <circle cx="985" cy="168" r="6" fill="#8b7cf6"/>
+    <text x="1003" y="174" font-size="17" font-weight="600" fill="#e2e8f0">ESLint</text>
+    <circle cx="985" cy="202" r="6" fill="#2088FF"/>
+    <text x="1003" y="208" font-size="17" font-weight="600" fill="#e2e8f0">GitHub Actions</text>
+  </g>
+</svg>
