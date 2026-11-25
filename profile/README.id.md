@@ -37,44 +37,45 @@ dan satu aplikasi web dengan ruang kerja khusus untuk setiap peran.
 
 ## 🗂️ Repositori
 
-<table>
-<tr><th colspan="2" align="left">🌐 Front end &amp; gateway</th></tr>
-<tr>
-<td width="50%" valign="top"><a href="https://github.com/sidigs-microservice/sidigs-web-app"><b>sidigs-web-app</b></a><br/><sub>Aplikasi web dengan ruang kerja untuk setiap peran</sub></td>
-<td width="50%" valign="top"><a href="https://github.com/sidigs-microservice/sidigs-api-gateway"><b>sidigs-api-gateway</b></a><br/><sub>Routing, identitas, tenant, izin akses, feature flag</sub></td>
-</tr>
-<tr><th colspan="2" align="left">🔑 Layanan inti</th></tr>
-<tr>
-<td width="50%" valign="top"><a href="https://github.com/sidigs-microservice/sidigs-iam-service"><b>sidigs-iam-service</b></a><br/><sub>Akun, autentikasi, notifikasi, chat</sub></td>
-<td width="50%" valign="top"><a href="https://github.com/sidigs-microservice/sidigs-organization-service"><b>sidigs-organization-service</b></a><br/><sub>Yayasan, sekolah, partner, branding</sub></td>
-</tr>
-<tr><th colspan="2" align="left">🧩 Layanan domain</th></tr>
-<tr>
-<td width="50%" valign="top"><a href="https://github.com/sidigs-microservice/sidigs-academic-service"><b>sidigs-academic-service</b></a><br/><sub>Siswa, kelas, kurikulum, presensi, rapor</sub></td>
-<td width="50%" valign="top"><a href="https://github.com/sidigs-microservice/sidigs-exam-service"><b>sidigs-exam-service</b></a><br/><sub>Bank soal, runtime CBT, penilaian</sub></td>
-</tr>
-<tr>
-<td width="50%" valign="top"><a href="https://github.com/sidigs-microservice/sidigs-finance-service"><b>sidigs-finance-service</b></a><br/><sub>Tagihan, pembayaran, e-money, tabungan, akuntansi</sub></td>
-<td width="50%" valign="top"><a href="https://github.com/sidigs-microservice/sidigs-hr-service"><b>sidigs-hr-service</b></a><br/><sub>Pegawai, presensi staf, penggajian, kinerja</sub></td>
-</tr>
-<tr>
-<td width="50%" valign="top"><a href="https://github.com/sidigs-microservice/sidigs-content-service"><b>sidigs-content-service</b></a><br/><sub>Persuratan, pengumuman, dokumen, unggahan</sub></td>
-<td width="50%" valign="top"><a href="https://github.com/sidigs-microservice/sidigs-infrastructure-service"><b>sidigs-infrastructure-service</b></a><br/><sub>Sarpra, perpustakaan, klinik, laundry, pesantren</sub></td>
-</tr>
-<tr>
-<td width="50%" valign="top"><a href="https://github.com/sidigs-microservice/sidigs-canteen-service"><b>sidigs-canteen-service</b></a><br/><sub>Merchant dan kasir kantin</sub></td>
-<td width="50%" valign="top"><a href="https://github.com/sidigs-microservice/sidigs-registration-service"><b>sidigs-registration-service</b></a><br/><sub>Pendaftaran dan onboarding sekolah</sub></td>
-</tr>
-<tr><th colspan="2" align="left">🧰 Platform &amp; dokumen</th></tr>
-<tr>
-<td width="50%" valign="top"><a href="https://github.com/sidigs-microservice/sidigs-platform"><b>sidigs-platform</b></a><br/><sub>Runtime lokal, konfigurasi, seed, alat developer</sub></td>
-<td width="50%" valign="top"><a href="https://github.com/sidigs-microservice/sidigs-service-template"><b>sidigs-service-template</b></a><br/><sub>Titik awal setiap layanan baru</sub></td>
-</tr>
-<tr>
-<td width="50%" valign="top"><a href="https://github.com/sidigs-microservice/sidigs-architecture"><b>sidigs-architecture</b></a><br/><sub>Keputusan arsitektur, sumber kebenaran</sub></td>
-<td width="50%" valign="top"><a href="https://github.com/sidigs-microservice/sidigs-api-collection"><b>sidigs-api-collection</b></a><br/><sub>Koleksi API untuk pengujian dan integrasi</sub></td>
-</tr>
-</table>
+<div align="center">
+
+<img src="./assets/repos/group-front.svg" alt="FRONT END & EDGE" width="100%" />
+
+<a href="https://github.com/sidigs-microservice/sidigs-web-app"><img src="./assets/repos/sidigs-web-app.svg" alt="sidigs-web-app: Next.js · every role" width="49%" /></a>
+<a href="https://github.com/sidigs-microservice/sidigs-api-gateway"><img src="./assets/repos/sidigs-api-gateway.svg" alt="sidigs-api-gateway: routing · auth · flags" width="49%" /></a>
+
+<a href="https://github.com/sidigs-microservice/sidigs-attendance-ingress-service"><img src="./assets/repos/sidigs-attendance-ingress-service.svg" alt="sidigs-attendance-ingress-service (in development): RFID · device attendance" width="49%" /></a>
+
+<img src="./assets/repos/group-core.svg" alt="CORE SERVICES" width="100%" />
+
+<a href="https://github.com/sidigs-microservice/sidigs-iam-service"><img src="./assets/repos/sidigs-iam-service.svg" alt="sidigs-iam-service: accounts · auth · chat" width="49%" /></a>
+<a href="https://github.com/sidigs-microservice/sidigs-organization-service"><img src="./assets/repos/sidigs-organization-service.svg" alt="sidigs-organization-service: foundations · schools" width="49%" /></a>
+
+<img src="./assets/repos/group-domain.svg" alt="DOMAIN SERVICES" width="100%" />
+
+<a href="https://github.com/sidigs-microservice/sidigs-academic-service"><img src="./assets/repos/sidigs-academic-service.svg" alt="sidigs-academic-service: classes · attendance · report cards" width="49%" /></a>
+<a href="https://github.com/sidigs-microservice/sidigs-exam-service"><img src="./assets/repos/sidigs-exam-service.svg" alt="sidigs-exam-service: question bank · CBT · scoring" width="49%" /></a>
+
+<a href="https://github.com/sidigs-microservice/sidigs-finance-service"><img src="./assets/repos/sidigs-finance-service.svg" alt="sidigs-finance-service: bills · e-money · accounting" width="49%" /></a>
+<a href="https://github.com/sidigs-microservice/sidigs-hr-service"><img src="./assets/repos/sidigs-hr-service.svg" alt="sidigs-hr-service: staff · attendance · payroll" width="49%" /></a>
+
+<a href="https://github.com/sidigs-microservice/sidigs-content-service"><img src="./assets/repos/sidigs-content-service.svg" alt="sidigs-content-service: letters · announcements · files" width="49%" /></a>
+<a href="https://github.com/sidigs-microservice/sidigs-infrastructure-service"><img src="./assets/repos/sidigs-infrastructure-service.svg" alt="sidigs-infrastructure-service: library · clinic · facilities" width="49%" /></a>
+
+<a href="https://github.com/sidigs-microservice/sidigs-canteen-service"><img src="./assets/repos/sidigs-canteen-service.svg" alt="sidigs-canteen-service: merchants · point of sale" width="49%" /></a>
+<a href="https://github.com/sidigs-microservice/sidigs-registration-service"><img src="./assets/repos/sidigs-registration-service.svg" alt="sidigs-registration-service: school onboarding" width="49%" /></a>
+
+<a href="https://github.com/sidigs-microservice/sidigs-pkl-service"><img src="./assets/repos/sidigs-pkl-service.svg" alt="sidigs-pkl-service (in development): internships (PKL)" width="49%" /></a>
+
+<img src="./assets/repos/group-platform.svg" alt="PLATFORM & DOCS" width="100%" />
+
+<a href="https://github.com/sidigs-microservice/sidigs-platform"><img src="./assets/repos/sidigs-platform.svg" alt="sidigs-platform: local runtime · seeds · tooling" width="49%" /></a>
+<a href="https://github.com/sidigs-microservice/sidigs-service-template"><img src="./assets/repos/sidigs-service-template.svg" alt="sidigs-service-template: starter for every new service" width="49%" /></a>
+
+<a href="https://github.com/sidigs-microservice/sidigs-architecture"><img src="./assets/repos/sidigs-architecture.svg" alt="sidigs-architecture: decisions · source of truth" width="49%" /></a>
+<a href="https://github.com/sidigs-microservice/sidigs-api-collection"><img src="./assets/repos/sidigs-api-collection.svg" alt="sidigs-api-collection: API collections · testing" width="49%" /></a>
+
+</div>
 
 ## 🛠️ Teknologi
 
