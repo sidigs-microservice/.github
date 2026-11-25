@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 120" width="1280" height="120" role="img" aria-label="SIDIGS Engineering — Sekolah Jadi Mudah — sidigs.com">
+  <defs>
+    <pattern id="dots" width="22" height="22" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.2" fill="#1e2b45"/>
+    </pattern>
+    <clipPath id="card"><rect width="1280" height="120" rx="18"/></clipPath>
+  </defs>
+  <g clip-path="url(#card)" font-family="'Segoe UI', 'Inter', Helvetica, Arial, sans-serif">
+    <rect width="1280" height="120" fill="#0a1222"/>
+    <rect width="1280" height="120" fill="url(#dots)"/>
+    <rect x="0" y="0" width="6" height="120" fill="#2dd4bf"/>
+
+    <text x="72" y="56" font-size="26" font-weight="800" fill="#ffffff" letter-spacing="-.5">SIDIGS <tspan font-weight="300" fill="#94a3b8">Engineering</tspan></text>
+    <text x="72" y="86" font-size="16" fill="#64748b">Sekolah Jadi Mudah</text>
+
+    <g font-family="'Cascadia Code', 'JetBrains Mono', Consolas, monospace" font-size="15">
+      <circle cx="1002" cy="60" r="5" fill="#2dd4bf"><animate attributeName="opacity" values="1;.25;1" dur="2.4s" repeatCount="indefinite"/></circle>
+      <text x="1018" y="65" fill="#2dd4bf">sidigs.com</text>
+      <text x="1208" y="65" text-anchor="end" fill="#475569">→</text>
+    </g>
+  </g>
+</svg>

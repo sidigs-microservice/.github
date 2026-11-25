@@ -1,6 +1,8 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&height=180&color=0:0f766e,100:2563eb&text=SIDIGS%20Microservices&fontColor=ffffff&fontSize=44&fontAlignY=36&desc=Sekolah%20Jadi%20Mudah&descAlignY=58&descSize=18" alt="SIDIGS Microservices" width="100%" />
+<img src="./assets/banner.svg" alt="SIDIGS Microservices — Sekolah Jadi Mudah" width="100%" />
+
+**English** · [Bahasa Indonesia](./README.id.md)
 
 ### The engineering home of SIDIGS — one platform that runs a whole school.
 
@@ -146,14 +148,4 @@ Linear ticket  →  branch  →  pull request (title carries the Linear key)  �
 
 ---
 
-<div align="center">
-
-**SIDIGS Engineering Team**
-
-*Empowering schools through technology.*
-
-[sidigs.com](https://sidigs.com)
-
-<img src="https://capsule-render.vercel.app/api?type=waving&height=100&section=footer&color=0:0f766e,100:2563eb" width="100%" alt="" />
-
-</div>
+[<img src="./assets/footer.svg" alt="SIDIGS Engineering — sidigs.com" width="100%" />](https://sidigs.com)
