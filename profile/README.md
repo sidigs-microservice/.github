@@ -68,19 +68,7 @@ Chat and groups, class discussions, notifications, announcements, digital magazi
 
 ## 🧭 Architecture
 
-```mermaid
-flowchart LR
-    U(["👩‍🏫 Schools · 👨‍👩‍👧 Families · 🏛️ Foundations"]) --> W["Web App<br/>Next.js"]
-    W --> G{{"API Gateway<br/>routing · auth · flags"}}
-    G --> IAM["IAM"]
-    G --> ORG["Organization"]
-    G --> ACA["Academic"]
-    G --> EX["Exam"]
-    G --> FIN["Finance"]
-    G --> HR["HR"]
-    G --> MORE["Content · Canteen · Infrastructure<br/>Registration · PKL"]
-    ACA & HR --> ING["Attendance Ingress"]
-```
+<img src="./assets/architecture.svg" alt="Architecture: Web App and devices reach the API Gateway, which routes to core, domain and edge services" width="100%" />
 
 **Principles we hold to**
 
@@ -136,9 +124,7 @@ flowchart LR
 
 ## 🔄 How we work
 
-```text
-Linear ticket  →  branch  →  pull request (title carries the Linear key)  →  CI: lint · test · build · security  →  review  →  merge
-```
+<img src="./assets/workflow.svg" alt="Workflow: Linear ticket, branch, pull request, CI checks, review, merge" width="100%" />
 
 - 📋 **Linear** is where work is planned and tracked. GitHub Issues are not used.
 - 🔍 **Every change is reviewed** through a pull request before it is merged.

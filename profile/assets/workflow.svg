@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 200" width="1280" height="200" role="img" aria-label="Workflow: Linear ticket, branch, pull request, CI checks, review, merge">
+  <defs>
+    <pattern id="dots" width="22" height="22" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.2" fill="#1e2b45"/>
+    </pattern>
+    <clipPath id="card"><rect width="1280" height="200" rx="18"/></clipPath>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 z" fill="#2dd4bf"/>
+    </marker>
+  </defs>
+  <style>
+    .sans { font-family: 'Segoe UI', 'Inter', Helvetica, Arial, sans-serif; }
+    .mono { font-family: 'Cascadia Code', 'JetBrains Mono', Consolas, monospace; }
+    .box { fill: #111c31; stroke: #2a3a5c; stroke-width: 1.5; }
+    .num { font-size: 13px; fill: #2dd4bf; letter-spacing: 2px; }
+    .name { font-size: 19px; font-weight: 700; fill: #f1f5f9; }
+    .sub { font-size: 12px; fill: #64748b; }
+    .wire { stroke: #2dd4bf; stroke-opacity: .6; stroke-width: 2; }
+  </style>
+
+  <g clip-path="url(#card)">
+    <rect width="1280" height="200" fill="#0a1222"/>
+    <rect width="1280" height="200" fill="url(#dots)"/>
+
+    <g class="wire" marker-end="url(#arrow)">
+      <line x1="221" y1="100" x2="241" y2="100"/>
+      <line x1="426" y1="100" x2="446" y2="100"/>
+      <line x1="631" y1="100" x2="651" y2="100"/>
+      <line x1="836" y1="100" x2="856" y2="100"/>
+      <line x1="1041" y1="100" x2="1061" y2="100"/>
+    </g>
+
+    <g class="sans">
+      <rect class="box" x="40" y="45" width="176" height="110" rx="12"/>
+      <text class="num mono" x="60" y="76">01</text><text class="name" x="60" y="106">Ticket</text><text class="sub mono" x="60" y="132">Linear</text>
+
+      <rect class="box" x="245" y="45" width="176" height="110" rx="12"/>
+      <text class="num mono" x="265" y="76">02</text><text class="name" x="265" y="106">Branch</text><text class="sub mono" x="265" y="132">one per ticket</text>
+
+      <rect class="box" x="450" y="45" width="176" height="110" rx="12"/>
+      <text class="num mono" x="470" y="76">03</text><text class="name" x="470" y="106">Pull Request</text><text class="sub mono" x="470" y="132">SDG-123 in title</text>
+
+      <rect class="box" x="655" y="45" width="176" height="110" rx="12"/>
+      <text class="num mono" x="675" y="76">04</text><text class="name" x="675" y="106">CI Checks</text><text class="sub mono" x="675" y="132">lint · test · build</text><text class="sub mono" x="675" y="148">security</text>
+
+      <rect class="box" x="860" y="45" width="176" height="110" rx="12"/>
+      <text class="num mono" x="880" y="76">05</text><text class="name" x="880" y="106">Review</text><text class="sub mono" x="880" y="132">code review</text>
+
+      <rect x="1065" y="45" width="176" height="110" rx="12" fill="#0f2a2a" stroke="#2dd4bf" stroke-width="1.5"/>
+      <text class="num mono" x="1085" y="76">06</text><text class="name" x="1085" y="106">Merge</text><text class="sub mono" x="1085" y="132" fill="#2dd4bf">→ main</text>
+    </g>
+  </g>
+</svg>

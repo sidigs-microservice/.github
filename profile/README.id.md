@@ -68,19 +68,7 @@ Chat dan grup, diskusi kelas, notifikasi, pengumuman, majalah digital.
 
 ## 🧭 Arsitektur
 
-```mermaid
-flowchart LR
-    U(["👩‍🏫 Sekolah · 👨‍👩‍👧 Keluarga · 🏛️ Yayasan"]) --> W["Web App<br/>Next.js"]
-    W --> G{{"API Gateway<br/>routing · auth · flag"}}
-    G --> IAM["IAM"]
-    G --> ORG["Organization"]
-    G --> ACA["Academic"]
-    G --> EX["Exam"]
-    G --> FIN["Finance"]
-    G --> HR["HR"]
-    G --> MORE["Content · Canteen · Infrastructure<br/>Registration · PKL"]
-    ACA & HR --> ING["Attendance Ingress"]
-```
+<img src="./assets/architecture.svg" alt="Arsitektur: Web App dan perangkat masuk lewat API Gateway, yang meneruskan ke layanan inti, domain, dan edge" width="100%" />
 
 **Prinsip yang kami pegang**
 
@@ -136,9 +124,7 @@ flowchart LR
 
 ## 🔄 Cara kami bekerja
 
-```text
-Tiket Linear  →  branch  →  pull request (judul memuat key Linear)  →  CI: lint · test · build · security  →  review  →  merge
-```
+<img src="./assets/workflow.svg" alt="Alur kerja: tiket Linear, branch, pull request, CI, review, merge" width="100%" />
 
 - 📋 **Linear** adalah tempat pekerjaan direncanakan dan dilacak. GitHub Issues tidak dipakai.
 - 🔍 **Setiap perubahan direview** lewat pull request sebelum di-merge.
